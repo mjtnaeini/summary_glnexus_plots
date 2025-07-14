@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -P ox63
+#PBS -q hugemem
+#PBS -N generate_variant_plot
+#PBS -l walltime=48:00:00
+#PBS -l mem=1400GB
+#PBS -l ncpus=1
+#PBS -l wd
+#PBS -l storage=gdata/ox63+scratch/ox63
+#PBS -M m.naeini@garvan.org.au
+#PBS -m abe
+
+module load R/4.4.2
+
+Rscript /scratch/ox63/mn4616/generate_variant_plot_inputs.R \
+  --mode "SNV" \
+  --vcf_rdata /scratch/ox63/mn4616/plots_snv_indel/All_autosomes_combined_VCF_df.RData \
+  --output_dir /scratch/ox63/mn4616/plots_snv_indel/
