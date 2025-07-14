@@ -1,5 +1,4 @@
-# summary_glnexus_plots
-# Variant Burden Analysis Pipeline
+# Joint SNV/INDEL Variants Analysis
 
 This repository contains a PBS- and R-based pipeline to perform per-chromosome variant analysis, burden calculation, and visualization for SNVs and indels. It includes chromosome-wise analysis, data merging, and population-stratified plotting.
 
