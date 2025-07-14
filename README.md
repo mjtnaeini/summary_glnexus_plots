@@ -1,5 +1,4 @@
-# Joint SNV/INDEL Variants Analysis
-# Variant Burden Analysis Pipeline
+# Joint SNV/INDEL Variants Summary Plots
 
 This repository contains a PBS- and R-based pipeline to perform per-chromosome variant analysis, burden calculation, and visualization for SNVs and indels. It is designed for HPC systems like **Gadi (NCI Australia)** and includes chromosome-wise analysis, data merging, and population-stratified plotting.
 
@@ -113,7 +112,7 @@ module load R/4.4.2
 - The metadata file used for sample population info is:
 
   ```
-  /g/data/ox63/marjan/projects/indo_genome/sample_info/indo_info_sheet_with_coverage.tsv
+  tsv file
   ```
 
 - Each script accepts `--mode` argument with options:
