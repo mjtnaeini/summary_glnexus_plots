@@ -1,7 +1,7 @@
 # summary_glnexus_plots
 # Variant Burden Analysis Pipeline
 
-This repository contains a PBS- and R-based pipeline to perform per-chromosome variant analysis, burden calculation, and visualization for SNVs and indels. It is designed for HPC systems like **Gadi (NCI Australia)** and includes chromosome-wise analysis, data merging, and population-stratified plotting.
+This repository contains a PBS- and R-based pipeline to perform per-chromosome variant analysis, burden calculation, and visualization for SNVs and indels. It includes chromosome-wise analysis, data merging, and population-stratified plotting.
 
 ---
 
@@ -101,7 +101,7 @@ The main input .RData file should contain a vcf_df object.
 
 Sample metadata file must be:
 
-/g/data/ox63/marjan/projects/indo_genome/sample_info/indo_info_sheet_with_coverage.tsv
+tsv file
 Use --mode to specify "SNV", "Indel", or "All" in each script.
 
 Job scripts are PBS-compatible for execution on HPC environments.
